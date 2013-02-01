@@ -29,6 +29,8 @@ import javax.swing.JSeparator;
 import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Principal extends JFrame {
 
@@ -146,19 +148,19 @@ public class Principal extends JFrame {
 		mnVenta.add(mnFecha);
 		
 		JLabel label = new JLabel("$ 500.000");
-		label.setBounds(10, 87, 113, 14);
+		label.setBounds(10, 76, 113, 14);
 		contentPane.add(label);
 		
 		JLabel label_2 = new JLabel("Saldo Actual");
-		label_2.setBounds(10, 62, 113, 14);
+		label_2.setBounds(10, 51, 113, 14);
 		contentPane.add(label_2);
 		
 		JLabel lblJuanCamiloVega = new JLabel("Juan Camilo Vega");
-		lblJuanCamiloVega.setBounds(10, 37, 113, 14);
+		lblJuanCamiloVega.setBounds(10, 26, 113, 14);
 		contentPane.add(lblJuanCamiloVega);
 		
 		JLabel label_1 = new JLabel("01/05/2013");
-		label_1.setBounds(365, 37, 67, 14);
+		label_1.setBounds(365, 26, 67, 14);
 		contentPane.add(label_1);
 		
 		JLabel label_3 = new JLabel("");
@@ -206,6 +208,10 @@ public class Principal extends JFrame {
 		contentPane.add(label_5);
 		
 		JButton btnComprar = new JButton("Comprar");
+		btnComprar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnComprar.setBounds(345, 251, 87, 18);
 		contentPane.add(btnComprar);
 	}
